@@ -9,4 +9,4 @@ python3 manage.py runserver
 ```
 
 In this tutorial, you will integrate a Decision Tree Classifier on the Iris dataset with a Django web app!
-<img src="tutorial_imgs/model-prediction-images.png">
+<img src="https://github.com/katiehouse/django-scikit-learn-tutorial/blob/master/tutorial_imgs/model-prediction-images.png">
