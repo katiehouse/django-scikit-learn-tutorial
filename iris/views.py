@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ModelForm
+from .models import Predictions
 import pickle
 
 
@@ -32,6 +33,13 @@ def predict_model(request):
 
             prediction_name = prediction_dict[prediction]['name']
             prediction_img = prediction_dict[prediction]['img']
+
+            # Save prediction to database Predictions table
+            Predictions.objects.create(sepal_length=sepal_length,
+                                       sepal_width=sepal_width,
+                                       petal_length=petal_length,
+                                       petal_width=petal_width,
+                                       prediction=prediction_name)
 
             return render(request, 'home.html', {'form': form, 'prediction': prediction,
                                                  'prediction_name': prediction_name,

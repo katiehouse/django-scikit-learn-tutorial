@@ -4,7 +4,7 @@ import pickle
 
 # Load the Iris dataset
 iris = load_iris()
-X = iris.data  # we only take the first two features.
+X = iris.data
 y = iris.target
 
 # Train a Decision Tree Classifier
