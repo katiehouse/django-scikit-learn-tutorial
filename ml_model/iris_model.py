@@ -1,9 +1,9 @@
-from sklearn import datasets
+from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
 import pickle
 
 # Load the Iris dataset
-iris = datasets.load_iris()
+iris = load_iris()
 X = iris.data  # we only take the first two features.
 y = iris.target
 

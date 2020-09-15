@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>it works!</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+{% if form.is_valid %}
+<p> The model predicted: <b>{{ prediction_name }}</b></p>
+<img src={{ prediction_img }} style="max-width:400px">
+
+{% endif %}
+
 {% endblock %}
