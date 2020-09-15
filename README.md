@@ -4,8 +4,8 @@ This tutorial creates a Django web app that tests a simple classification model 
 
 #### To run locally
 ```
-pip install -r requirements.txt
-python manage.py runserver
+pip3 install -r requirements.txt
+python3 manage.py runserver
 ```
 
 In this tutorial, you will integrate a Decision Tree Classifier on the Iris dataset with a Django web app!
