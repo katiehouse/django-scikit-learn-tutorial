@@ -18,6 +18,6 @@ from django.urls import path
 from iris import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.predict_model, name='predict_model'),
+    path("admin/", admin.site.urls),
+    path("", views.PredictionView.as_view(), name="predict_model"),
 ]
