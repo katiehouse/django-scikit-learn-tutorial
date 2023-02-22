@@ -9,6 +9,7 @@ Deployed App: https://iris-django.herokuapp.com/
 #### To run locally
 ```
 pip3 install -r requirements.txt
+python3 manage.py migrate
 python3 manage.py runserver
 ```
 
