@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
+import django_on_heroku
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -128,4 +128,4 @@ STATIC_URL = '/static/'
 # Activate Django-Heroku.
 DATABASES['default'] = dj_database_url.config(
     conn_max_age=600, ssl_require=True)
-django_heroku.settings(locals())
+django_on_heroku.settings(locals())
