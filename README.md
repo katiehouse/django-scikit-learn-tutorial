@@ -3,8 +3,13 @@
 This tutorial creates a Django web app that tests a simple classification model with the `iris` dataset. This tutorial is performed on Mac OS, so some commands may be different for a PC.
 
 #### To run locally
+First time configure:
 ```
 pip3 install -r requirements.txt
+python3 manage.py migrate
+```
+Run local server:
+```
 python3 manage.py runserver
 ```
 
