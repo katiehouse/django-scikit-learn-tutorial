@@ -27,9 +27,9 @@ def predict_model(request):
             prediction_dict = [{'name': 'setosa',
                                 'img': 'https://alchetron.com/cdn/iris-setosa-0ab3145a-68f2-41ca-a529-c02fa2f5b02-resize-750.jpeg'},
                                {'name': 'versicolor',
-                                'img': 'https://wiki.irises.org/pub/Spec/SpecVersicolor/iversicolor07.jpg'},
+                                'img': 'https://www.plantmorenatives.com/uploads/4/2/5/3/42539229/s308030450575347893_p39_i3_w1984.jpeg'},
                                {'name': 'virginica',
-                                'img': 'https://www.gardenia.net/storage/app/public/uploads/images/detail/xUM027N8JI22aQPImPoH3NtIMpXkm89KAIKuvTMB.jpeg'}]
+                                'img': 'https://s3.amazonaws.com/eit-planttoolbox-prod/media/images/Iris-virginica--Justin-Meissen--CC-BY-SA.jpg'}]
 
             prediction_name = prediction_dict[prediction]['name']
             prediction_img = prediction_dict[prediction]['img']
